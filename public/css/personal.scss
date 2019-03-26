@@ -1,0 +1,121 @@
+$m-primary: #ffffff;
+$m-secondary: #ffffff;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Rock+Salt');
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: $m-primary;
+  background-image: url("/images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  padding-top: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5em 1.5em 0.5em 3em;
+  border-bottom: 3px solid $m-secondary;
+  justify-content: space-between;
+}
+
+footer {
+  text-align: center;
+  border-top: 3px solid $m-secondary;
+  margin-top: 2em;
+  padding: 1em;
+}
+
+a {
+  color: $m-primary;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 3em;
+  max-width: 70vw;
+}
+
+footer img {
+  height: 1.5rem;
+}
+
+.rock-salt {
+  font-family: 'Rock Salt', cursive;
+}
+
+.index-text {
+  align-self: flex-end;
+  align-items: flex-end;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+.text-banner a {
+  font-size: 3rem;
+  color: $m-primary;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  padding-right: 16px;
+}
+
+.nav-links a {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: $m-primary;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-family: "Merriweather-Regular", Georgia, "Times New Roman", serif;
+}
+
+.left-border {
+  border-left: 0.5em solid $m-primary;
+  padding-left: 1em;
+}
+
+.fl::first-letter {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-links {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    background-position-x: -180px;
+  }
+
+  section {
+    max-width: 85vw;
+  }
+
+  .left-border {
+    border-left-width: 0.3em;
+  }
+}
