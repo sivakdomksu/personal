@@ -34,7 +34,7 @@ module.exports = {
      */
     serveFooter: function () {
         return `
-            Send me an <span><a href="mailto:domsivak@gmail.com">email</a></span> or find me on <a href="https://www.facebook.com/bubakovsky"><img src="/images/fb.png" alt="Facebook"/></a>
+            Send me an <span><a href="mailto:domsivak@gmail.com">email</a></span> or find me on <a href="https://www.facebook.com/bubakovsky"><img src="/images/fb.png" alt="Facebook"/>acebook</a>
         `
     },
     /**

@@ -48,8 +48,15 @@ section {
   max-width: 70vw;
 }
 
+section img {
+  max-width: 150px;
+  float: left;
+  margin: 0.5em 1em 0 0;
+  border-radius: 8px;
+}
+
 footer img {
-  height: 1.5rem;
+  height: 1.2rem;
 }
 
 .rock-salt {
@@ -94,6 +101,12 @@ footer img {
 .fl::first-letter {
   font-weight: bold;
   font-size: 150%;
+}
+
+#resume-container {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 500px) {

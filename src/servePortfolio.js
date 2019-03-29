@@ -7,14 +7,26 @@ const commons = require("./commons");
  */
 module.exports = function (req, res) {
     res.setHeader("Content-Type", "text/html");
-    res.end(commons.serveHTML("Dominik Sivak &centerdot; About Me", `
+    res.end(commons.serveHTML("Dominik Sivak &centerdot; Portfolio", `
         <section>
             <p class="fl left-border">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum dui mi, vel condimentum magna dictum in. Cras consectetur enim urna, ut laoreet odio pellentesque et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac volutpat justo. Integer ac lorem scelerisque, iaculis ipsum facilisis, aliquam erat. Suspendisse molestie felis sit amet cursus sodales. Curabitur lacinia gravida est ac pharetra. Nullam vitae mollis felis. Nullam cursus justo imperdiet felis pharetra pellentesque.
-
-                Nam sodales, metus vitae condimentum sollicitudin, est ex sodales purus, at faucibus diam nibh ut urna. Aenean bibendum mauris eu orci mollis varius. Etiam purus lectus, pharetra ac lobortis a, sodales a leo. Nulla gravida mauris vitae placerat finibus. Aenean gravida leo sit amet tempus faucibus. Maecenas sagittis dignissim turpis eu tempus. Fusce dui nisi, vestibulum et ligula sit amet, consequat lobortis quam. Nam dignissim metus et bibendum fermentum. Cras commodo suscipit ultricies.
-
-                Ut fringilla venenatis lectus, non malesuada purus efficitur a. Pellentesque ac porttitor nisl. Sed ornare lacus sit amet posuere facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate mauris elit, et pellentesque dui ultricies sit amet. Etiam eget tempor quam. In elementum mollis mauris nec condimentum. Maecenas porta pretium velit ut venenatis. Fusce vitae ornare turpis. Nulla at finibus sapien, ut tincidunt odio. Curabitur interdum in est imperdiet facilisis. Sed vel nulla placerat, euismod lectus nec, tristique nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            <img src="/images/ds.png"/>
+                A part of my Web Development class on Kansas State University was an assignment to create a personal web page. The source code of web page you are currently looking at is located <a href="https://github.com/sivakdomksu/personal">here</a>.<br><br>
+                
+                The project uses Node.js to serve the web pages in a template style manner along with having custom built router (which we created in-class) to provide the correct page along with wildcard arguments.<br><br>
+                
+                The source code of the project can be found <a href="https://github.com/sivakdomksu/personal">here</a>.
+            </p>
+        </section>
+        <section>
+            <p class="fl left-border">
+            <img src="/images/asteroids.png"/>
+                Another assignment this time from a Game Development class was to create asteroid-like game. The goal of the game is not to get hit by an asteroid and gain the score by shooting at them.
+                 However, shooting at them cause them to multiply (until some point)!<br><br>
+                
+                The game is written in JS and implements a basic physics model which causes asteroids to bounce off each other when they collide. The player's spaceship also conforms to the laws of kinetic energy which makes the ship more difficult to turn around in higher speeds.<br><br>
+                
+                The source code of the project can be found <a href="https://github.com/sivakdomksu/580-Asteroids">here</a>.
             </p>
         </section>
     `, null, null));
