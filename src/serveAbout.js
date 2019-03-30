@@ -10,11 +10,12 @@ module.exports = function (req, res) {
     res.end(commons.serveHTML("Dominik Sivak &centerdot; About Me", `
         <section>
             <p class="fl left-border">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum dui mi, vel condimentum magna dictum in. Cras consectetur enim urna, ut laoreet odio pellentesque et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac volutpat justo. Integer ac lorem scelerisque, iaculis ipsum facilisis, aliquam erat. Suspendisse molestie felis sit amet cursus sodales. Curabitur lacinia gravida est ac pharetra. Nullam vitae mollis felis. Nullam cursus justo imperdiet felis pharetra pellentesque.
-
-                Nam sodales, metus vitae condimentum sollicitudin, est ex sodales purus, at faucibus diam nibh ut urna. Aenean bibendum mauris eu orci mollis varius. Etiam purus lectus, pharetra ac lobortis a, sodales a leo. Nulla gravida mauris vitae placerat finibus. Aenean gravida leo sit amet tempus faucibus. Maecenas sagittis dignissim turpis eu tempus. Fusce dui nisi, vestibulum et ligula sit amet, consequat lobortis quam. Nam dignissim metus et bibendum fermentum. Cras commodo suscipit ultricies.
-
-                Ut fringilla venenatis lectus, non malesuada purus efficitur a. Pellentesque ac porttitor nisl. Sed ornare lacus sit amet posuere facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate mauris elit, et pellentesque dui ultricies sit amet. Etiam eget tempor quam. In elementum mollis mauris nec condimentum. Maecenas porta pretium velit ut venenatis. Fusce vitae ornare turpis. Nulla at finibus sapien, ut tincidunt odio. Curabitur interdum in est imperdiet facilisis. Sed vel nulla placerat, euismod lectus nec, tristique nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                My name is Dominik Sivák (you can ignore that weird line above 'a') and I come from Slovakia which is in Central Europe. Ever since I was very young I have been playing with a computer. <br>&lt;fun-fact&gt;<br>&emsp;I was not allowed to play a lot of games, so I was left with MS Excel and my imagination.<br>&lt;/fun-fact&gt;<br>
+                When I began working on my first procedures in Pascal I knew this is something I want to do. I was able to find it both satisfying as in brain stimulating and artistic. There are very few careers that have these traits.<br>
+                The final decision was made when I received an admission letter from the Czech Technical University in Prague. As of 2019 I'm in my fourth year of study and enjoying my exchange study year at Kansas State University in the USA which has been invaluable so far.<br>
+                The thing that's equally important as my job for me is my free time. I try to manage it carefully and I spend it playing and making music and doing some sports from time to time. My school of thought is when one cannot get mind off the job, he cannot get it on the job completely.<br><br>
+                
+                To anyone reading this text I wish a wonderful day.
             </p>
         </section>
     `, null, null));
